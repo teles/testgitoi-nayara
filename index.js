@@ -1,5 +1,4 @@
-
-function isTruthy(x) {
+function potentiallyBuggyCode() {
     debugger;
-    return Boolean(x);
-}
+    // do potentially buggy stuff to examine, step through, etc.
+  }
