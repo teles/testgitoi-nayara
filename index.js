@@ -1,4 +1,3 @@
-function potentiallyBuggyCode() {
-    debugger;
-    // do potentially buggy stuff to examine, step through, etc.
-  }
+let x = 15 * 5;
+debugger;
+document.getElementById("demo").innerHTML = x;
