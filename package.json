@@ -17,7 +17,8 @@
     "url": "https://github.com/NayaraNicacio/testgitoi/issues"
   },
   "homepage": "https://github.com/NayaraNicacio/testgitoi#readme",
-  "dependencies": {
-    "eslint": "^8.34.0"
+  "devDependencies": {
+    "eslint": "^8.34.0",
+    "eslint-plugin-react": "^7.32.2"
   }
 }
