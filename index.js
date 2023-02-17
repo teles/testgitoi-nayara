@@ -1,3 +1,10 @@
-let x = 15 * 5;
+let totalVisits = 0;
 debugger;
-document.getElementById("demo").innerHTML = x;
+window.onload = function() {
+    totalVisits++;
+  }
+debugger;
+  function showVisits() {
+    document.getElementById("demo").innerHTML = totalVisits;
+  }
+
