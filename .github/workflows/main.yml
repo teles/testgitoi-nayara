@@ -19,13 +19,10 @@ jobs:
       - name: Check out Git repository
         uses: actions/checkout@v2
 
-      - uses: actions/checkout@v2
-      - name: Install ESLint
-        run: npm install eslint
+     
       - name: Run ESLint
         run: npx eslint *.js
-        with:
-          node-version: 16
+        
 
       # ESLint and Prettier must be in `package.json`
       - name: Install Node.js dependencies
