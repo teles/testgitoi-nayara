@@ -19,8 +19,11 @@ jobs:
       - name: Check out Git repository
         uses: actions/checkout@v2
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v2
+      - uses: actions/checkout@v2
+      - name: Install ESLint
+        run: npm install eslint
+      - name: Run ESLint
+        run: npx eslint *.js
         with:
           node-version: 16
 
