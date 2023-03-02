@@ -18,16 +18,11 @@ jobs:
     steps:
       - name: Check out Git repository
         uses: actions/checkout@v2
-
-     
-      - name: Run ESLint
-        run: npx eslint *.js
-        
-
       # ESLint and Prettier must be in `package.json`
       - name: Install Node.js dependencies
         run: npm ci
-
+      - name: Run ESLint
+        run: npx eslint *.js
       - name: Run linters
         uses: wearerequired/lint-action@v2
         with:
