@@ -1,10 +1,16 @@
 let totalVisits = 0;
-debugger;
-window.onload = function() {
-    totalVisits++;
-  }
-debugger;
-  function showVisits() {
+ 
+if (window.onload )
+ window.onload = function (){ totalVisits++;
     document.getElementById("demo").innerHTML = totalVisits;
-  }
+
+ }
+
+ 
+ 
+    
+     
+  
+   
+  
 
